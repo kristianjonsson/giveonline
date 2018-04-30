@@ -1,0 +1,682 @@
+/*------------------------------------------------------------------
+Project:        Give Online Svendeprøve
+Version:        1.0
+Last update:    25/04/2018
+Author:         Joachim Lind Hadberg
+URL:            https://facebook.com/joachimlindhadberg
+COMMENT:        This framework is using meyerweb reset css v2.0
+
+00. Reset
+01. General
+02. Typography
+03. Container
+04. Grid
+05. Block spacing
+06. Buttons
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------
+    00. RESET START
+---------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input {
+	box-sizing: border-box;
+}
+
+
+/*--------------------------------------------------
+    01. GENERAL START
+---------------------------------------------------*/
+
+::selection {
+  background-color: #f5f5f5;
+}
+
+html, body {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #282828;
+  font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+  letter-spacing: .016em;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f9f9fb;
+}
+
+img {
+  margin-bottom: -3px;
+}
+
+button {
+  background-color: none;
+}
+
+/*--------------------------------------------------
+    02. TYPOGRAPHY START
+---------------------------------------------------*/
+
+/*------ HEADING START ------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  color: #07425f;
+  font-weight: 600;
+  margin: 0px 0px 10px 0px;
+}
+
+h1 { font-size: 2.5rem; }
+
+h2 { font-size: 2rem; }
+
+h3 { font-size: 1.75rem; }
+
+h4 { font-size: 1.5rem; }
+
+h5 { font-size: 1.25rem; }
+
+h6 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*------ HEADING END ------*/
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: #282828;
+  font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+  letter-spacing: .016em;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:visited {
+  text-decoration: none
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline
+}
+
+.text_center {
+  text-align: center;
+}
+
+
+/*--------------------------------------------------
+    03. CONTAINER START
+---------------------------------------------------*/
+
+/*------ MOBILE DEVICES STARTS ------*/
+.main_container,
+.center_container {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  }
+/*------ MOBILE DEVICES END ------*/
+
+
+/*------ DISKTOP DEVICES STARTS ------*/
+@media only screen and (min-width: 769px) and (max-width: 899px) {
+
+  .main_container {
+    width: 742px;
+  }
+
+  .center_container {
+    width: 750px;
+  }
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 991px) {
+
+  .main_container {
+    width: 862px;
+  }
+
+  .center_container {
+    width: 750px;
+  }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .main_container {
+    width: 970px;
+  }
+
+  .center_container {
+    width: 900px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .main_container {
+    width: 1170px;
+  }
+
+  .center_container {
+    width: 900px;
+  }
+
+}
+/*------ DISKTOP DEVICES END ------*/
+
+
+/*--------------------------------------------------
+    04. GRID START
+---------------------------------------------------*/
+
+/*------ GENERAL START ------*/
+.row_main {
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+}
+
+.col_12,
+.col_11,
+.col_10,
+.col_9,
+.col_8,
+.col_7,
+.col_6,
+.col_5,
+.col_4,
+.col_3,
+.col_2,
+.col_1 {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+/*------ GENERAL END ------*/
+
+
+/*------ CLEAR BOTH START ------*/
+.col_12::after,
+.col_11::after,
+.col_10::after,
+.col_9::after,
+.col_8::after,
+.col_7::after,
+.col_6::after,
+.col_5::after,
+.col_4::after,
+.col_3::after,
+.col_2::after,
+.col_1::after {
+  content: "";
+  clear: both;
+}
+/*------ CLEAR BOTH END ------*/
+
+
+/*------ 12 COLUMN START ------*/
+.col_12 {
+  width: 100%;
+}
+.col_11 {
+  width: 91.66666667%;
+}
+.col_10 {
+  width: 83.33333333%;
+}
+.col_9 {
+  width: 75%;
+}
+.col_8 {
+  width: 66.66666667%;
+}
+.col_7 {
+  width: 58.33333333%;
+}
+.col_6 {
+  width: 50%;
+}
+.col_5 {
+  width: 41.66666667%;
+}
+.col_4 {
+  width: 33.33333333%;
+}
+.col_3 {
+  width: 25%;
+}
+.col_2 {
+  width: 16.66666667%;
+}
+.col_1 {
+  width: 8.33333333%;
+}
+/*------ 12 COLUMN END ------*/
+
+
+/*------ OFFSET START ------*/
+.col_offset_12 {
+  margin-left: 100%;
+}
+.col_offset_11 {
+  margin-left: 91.66666667%;
+}
+.col_offset_10 {
+  margin-left: 83.33333333%;
+}
+.col_offset_9 {
+  margin-left: 75%;
+}
+.col_offset_8 {
+  margin-left: 66.66666667%;
+}
+.col_offset_7 {
+  margin-left: 58.33333333%;
+}
+.col_offset_6 {
+  margin-left: 50%;
+}
+.col_offset_5 {
+  margin-left: 41.66666667%;
+}
+.col_offset_4 {
+  margin-left: 33.33333333%;
+}
+.col_offset_3 {
+  margin-left: 25%;
+}
+.col_offset_2 {
+  margin-left: 16.66666667%;
+}
+.col_offset_1 {
+  margin-left: 8.33333333%;
+}
+.col_offset_0 {
+  margin-left: 0;
+}
+/*------ OFFSET END ------*/
+
+
+/*------ MEDIAQUERIES START------*/
+@media only screen and (max-width: 768px) {
+  body {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  /*------ 12 COLUMN START ------*/
+  .col_1, .col_2, .col_3,
+  .col_4, .col_5, .col_6,
+  .col_7, .col_8, .col_9,
+  .col_10, .col_11, .col_12 {
+    width: 100%;
+  }
+  [class^="col_offset"] {
+    margin-left: 0;
+  }
+
+  .col_offset_3 {
+    margin-left: 0;
+  }
+  /*------ 12 COLUMN END ------*/
+
+}
+/*------ MEDIAQUERIES END------*/
+
+
+/*--------------------------------------------------
+    05. BLOCK SPACING START
+---------------------------------------------------*/
+
+/*------ MARGIN START ------*/
+.m-12 { margin: 12px; }
+.m-24 { margin: 24px; }
+.m-36 { margin: 36px; }
+.m-48 { margin: 48px; }
+.m-60 { margin: 60px; }
+.m-72 { margin: 72px; }
+/*------ MARGIN END ------*/
+
+
+/*------ MARGIN TOP START ------*/
+.m-top-12 { margin-top: 12px; }
+.m-top-24 { margin-top: 24px; }
+.m-top-36 { margin-top: 36px; }
+.m-top-48 { margin-top: 48px; }
+.m-top-60 { margin-top: 60px; }
+.m-top-72 { margin-top: 72px; }
+/*------ MARGIN TOP END ------*/
+
+
+/*------ MARGIN LEFT START ------*/
+.m-left-12 { margin-left: 12px; }
+.m-left-24 { margin-left: 24px; }
+.m-left-36 { margin-left: 36px; }
+.m-left-48 { margin-left: 48px; }
+.m-left-60 { margin-left: 60px; }
+.m-left-72 { margin-left: 72px; }
+/*------ MARGIN LEFT END ------*/
+
+
+/*------ MARGIN RIGHT START ------*/
+.m-right-12 { margin-right: 12px; }
+.m-right-24 { margin-right: 24px; }
+.m-right-36 { margin-right: 36px; }
+.m-right-48 { margin-right: 48px; }
+.m-right-60 { margin-right: 60px; }
+.m-right-72 { margin-right: 72px; }
+/*------ MARGIN RIGHT END ------*/
+
+
+/*------ MARGIN BOTTOM START ------*/
+.m-bottom-12 { margin-bottom: 12px; }
+.m-bottom-24 { margin-bottom: 24px; }
+.m-bottom-36 { margin-bottom: 36px; }
+.m-bottom-48 { margin-bottom: 48px; }
+.m-bottom-60 { margin-bottom: 60px; }
+.m-bottom-72 { margin-bottom: 72px; }
+/*------ MARGIN BOTTOM END ------*/
+
+
+/*------ PADDING START ------*/
+.p-12 { padding: 12px; }
+.p-24 { padding: 24px; }
+.p-36 { padding: 36px; }
+.p-48 { padding: 48px; }
+.p-60 { padding: 60px; }
+.p-72 { padding: 72px; }
+/*------ PADDING END ------*/
+
+
+/*------ PADDING TOP START ------*/
+.p-top-12 { padding-top: 12px; }
+.p-top-24 { padding-top: 24px; }
+.p-top-36 { padding-top: 36px; }
+.p-top-48 { padding-top: 48px; }
+.p-top-60 { padding-top: 60px; }
+.p-top-72 { padding-top: 72px; }
+/*------ PADDING TOP END ------*/
+
+
+/*------ PADDING LEFT START ------*/
+.p-left-12 { padding-left: 12px; }
+.p-left-24 { padding-left: 24px; }
+.p-left-36 { padding-left: 36px; }
+.p-left-48 { padding-left: 48px; }
+.p-left-60 { padding-left: 60px; }
+.p-left-72 { padding-left: 72px; }
+/*------ PADDING LEFT END ------*/
+
+
+/*------ PADDING RIGHT START ------*/
+.p-right-12 { padding-right: 12px; }
+.p-right-24 { padding-right: 24px; }
+.p-right-36 { padding-right: 36px; }
+.p-right-48 { padding-right: 48px; }
+.p-right-60 { padding-right: 60px; }
+.p-right-72 { padding-right: 72px; }
+/*------ PADDING RIGHT END ------*/
+
+
+/*------ PADDING BOTTOM START ------*/
+.p-bottom-12 { padding-bottom: 12px; }
+.p-bottom-24 { padding-bottom: 24px; }
+.p-bottom-36 { padding-bottom: 36px; }
+.p-bottom-48 { padding-bottom: 48px; }
+.p-bottom-60 { padding-bottom: 60px; }
+.p-bottom-72 { padding-bottom: 72px; }
+/*------ PADDING BOTTOM END ------*/
+
+
+/*--------------------------------------------------
+    06. BUTTONS START
+---------------------------------------------------*/
+
+/*------ BUTTON START ------*/
+.button {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.button:focus, .button:hover {
+  text-decoration: none;
+}
+
+a.button.disabled,
+fieldset[disabled] a.button {
+  pointer-events: none;
+}
+/*------ BUTTON START ------*/
+
+
+/*------ BUTTON PRIMARY STYLE START ------*/
+.button_primary {
+  color: #fff;
+  background-color: #2c92da;
+  border-color: #2c92da;
+}
+
+.button_primary:hover {
+  color: #fff;
+  background-color: #2477b3;
+  border-color: #2477b3;
+}
+
+.button_primary:focus, .button_primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+/*------ BUTTON PRIMARY STYLE END ------*/
+
+
+/*------ BUTTON SECONDARY STYLE START ------*/
+.button_secondary {
+  color: #2c92da;
+  background-color: none;
+  border-color: #2c92da;
+}
+
+.button_secondary:hover {
+  color: #fff;
+  background-color: #2c92da;
+  border-color: #2c92da;
+}
+
+.button_secondary:focus, .button_secondary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+/*------ BUTTON SECONDARY STYLE END ------*/
+
+
+/*------ BUTTON THIRD STYLE START ------*/
+.button_third {
+  color: #fff;
+  background-color: #868e96;
+  border-color: #868e96;
+}
+
+.button_third:hover {
+  color: #fff;
+  background-color: #727b84;
+  border-color: #6c757d;
+}
+
+.button_third:focus, .button_secondary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+/*------ BUTTON THIRD STYLE END ------*/
+
+
+/*--------------------------------------------------
+    07. FORM START
+---------------------------------------------------*/
+
+form .form_group {
+  margin: 0 0 12px 0;
+}
+
+form input[type='text'],
+form input[type='password'],
+form input[type='email'],
+form input[type='tel'],
+form input[type='search'] {
+  margin: 0;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  color: #dfdfdf;
+  width: 100%;
+  display: block;
+  background-color: #76b2c3;
+  border: 1px solid #76b2c3;
+  border-radius:0;
+  -webkit-border-radius:0;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+
+  transition: boder-color 0.15s ease-in-out;
+}
+
+@media only screen and (min-width: 769px) {
+	form input[type='text'],
+	form input[type='password'],
+	form input[type='email'],
+	form input[type='tel'],
+	form input[type='search'] {
+		width: 250px;
+	}
+}
+
+form input[type='text']:hover,
+form input[type='password']:hover,
+form input[type='email']:hover,
+form input[type='tel']:hover {
+  border-color: #2c92da;
+}
+
+form .form_group input[type='text']:focus,
+form .form_group input[type='password']:focus,
+form .form_group input[type='email']:focus,
+form .form_group input[type='tel']:focus {
+  border-color: #2c92da;
+}
+
+form .form_group input[type='text'].error,
+form .form_group input[type='password'].error,
+form .form_group input[type='email'].error,
+form .form_group input[type='tel'].error {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+
+.flex_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+header .flex_container {
+	background-color: #ffffff;
+}
+
+header .menu {
+	position: relative;
+	overflow: hidden;
+}
+
+header .menu form {
+	display: block;
+}
+
+header .menu nav {
+	display: block;
+}
+
+header .menu nav ul li {
+	display: inline-block;
+	margin: 0 12px;
+}
+
+header .menu nav ul li a {
+	color: #668333;
+}
+ footercolor {
+   background-color: black;
+ }
+
+
+
