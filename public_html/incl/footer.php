@@ -1,13 +1,18 @@
 
-<footer class="footercolor">
+<footer>
     <div class="main_container">
-        <div class="flex_container">
-            <p>hej med dig</p>
+        <div class="row_main">
+            <div class="col_4">
+            <h6>SIGNUP TO OUR NEWSLETTER</h6>
+            </div>
+            <div class="col_4">
+                <h6>SIGNUP TO OUR NEWSLETTER</h6>
+            </div>
+            <div class="col_4">
+                <h6>SIGNUP TO OUR NEWSLETTER</h6>
+            </div>
         </div>
     </div>
-
-
-
 
 </footer>
     <!-- JQUERY/JAVASCRIPT START -->

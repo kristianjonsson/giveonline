@@ -674,9 +674,11 @@ header .menu nav ul li {
 header .menu nav ul li a {
 	color: #668333;
 }
- footercolor {
+.footercolor {
    background-color: black;
  }
+ /***text on img***/
+
 
 
 
